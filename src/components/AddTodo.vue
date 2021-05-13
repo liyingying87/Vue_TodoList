@@ -4,7 +4,6 @@
         <input type="submit" value="添加">
     </form>
 </template>
-
 <script>
     export default {
         name: "AddTodo",
@@ -26,7 +25,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>

@@ -4,7 +4,6 @@
     <Todos v-bind:todos="todos" v-on:delete-todo="deleteTodo"></Todos>
   </div>
 </template>
-
 <script>
   import Todos from './components/Todos.vue'
   import AddTodo from './components/AddTodo.vue'
