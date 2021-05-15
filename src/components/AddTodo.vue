@@ -5,6 +5,7 @@
     </form>
 </template>
 <script>
+    import { mapMutations } from 'vuex'
     export default {
         name: "AddTodo",
         data() {
@@ -13,6 +14,7 @@
             }
         },
         methods: {
+            ...mapMutations(['addtodo']),
             submit() {
                 const todo = {
                     id: new Date().getTime(),
@@ -20,7 +22,8 @@
                     completed: false
                 };
                 this.title = ""
-                this.$emit("add-todo", todo);//触发事件
+                // this.$emit("add-todo", todo);//触发事件
+                this.addtodo(todo);//触发事件
             }
         }
     }
