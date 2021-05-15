@@ -17,7 +17,7 @@
             ...mapMutations(['addtodo']),
             submit() {
                 const todo = {
-                    id: new Date().getTime(),
+                    id: new Date().toLocaleString(),
                     title: this.title,
                     completed: false
                 };

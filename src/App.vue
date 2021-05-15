@@ -4,22 +4,20 @@
     <AddTodo />
     <!-- <Todos v-on:delete-todo="deleteTodo"></Todos> -->
     <Todos></Todos>
+    <History> </History>
   </div>
 </template>
 
 <script>
-
+  import History from './components/History.vue'
   import Todos from './components/Todos.vue'
   import AddTodo from './components/AddTodo.vue'
   export default {
     name: 'App',
     components: {
       Todos,
-      AddTodo
-    },
-    data() {
-      return {
-      }
+      AddTodo,
+      History
     },
     methods: {
       // addTodo(todo) {
